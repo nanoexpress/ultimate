@@ -43,7 +43,7 @@
     "debug": "^4.3.4",
     "fast-decode-uri-component": "^1.0.1",
     "fast-query-parse": "^2.0.4",
-    "path-to-regexp": "^6.2.1",
+    "path-to-regexp": "^6.2.2",
     "supports-color": "^9.4.0",
     "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.24.0.tar.gz"
   },

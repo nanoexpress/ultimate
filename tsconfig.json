@@ -1,11 +1,11 @@
 {
-  "include": ["exposes", "src", "*.cjs", "types"],
+  "include": ["exposes", "src", "types", "eslint.config.js"],
   "exclude": ["node_modules", "examples", "tests"],
   "compilerOptions": {
     "target": "es2020",
     "module": "esnext",
     "lib": ["es2020"],
-    "allowJs": true,
+    "allowJs": false,
     "incremental": false,
     "checkJs": false,
     // "jsx": "preserve",

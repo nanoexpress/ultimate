@@ -8,10 +8,12 @@
   ],
   "typescript.validate.enable": true,
   "prettier.requireConfig": true,
+  "eslint.useFlatConfig": true,
   "files.associations": {
     "*.js": "javascript",
     "*.d.ts": "typescript"
   },
+  "npm.packageManager": "bun",
   "terminal.integrated.env.osx": {
     "PATH": "${workspaceFolder}/node_modules/.bin"
   },

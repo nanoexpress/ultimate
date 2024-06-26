@@ -1,4 +1,5 @@
-/* eslint-disable max-lines, max-lines-per-function, complexity, max-depth */
+// eslint-disable-next-line @eslint-community/eslint-comments/disable-enable-pair
+/* eslint-disable max-lines, max-lines-per-function, max-depth */
 import { EventEmitter } from 'events';
 import { createReadStream, ReadStream, statSync } from 'fs';
 import uWS, { RecognizedString } from 'uWebSockets.js';
@@ -134,7 +135,7 @@ class HttpResponse {
    */
   on(
     eventName: string | symbol,
-    eventArgument: (eventArgument?: unknown) => void
+    eventArgument: (eventArg?: unknown) => void
   ): this {
     let emitter = this[resEvents];
 
@@ -161,7 +162,7 @@ class HttpResponse {
    */
   once(
     eventName: string | symbol,
-    eventArgument: (eventArgument?: unknown) => void
+    eventArgument: (eventArg?: unknown) => void
   ): this {
     let emitter = this[resEvents];
 
@@ -188,7 +189,7 @@ class HttpResponse {
    */
   off(
     eventName: string | symbol,
-    eventArgument: (eventArgument?: unknown) => void
+    eventArgument: (eventArg?: unknown) => void
   ): this {
     let emitter = this[resEvents];
 
@@ -215,7 +216,7 @@ class HttpResponse {
    */
   removeListener(
     eventName: string | symbol,
-    eventArgument: (eventArgument?: unknown) => void
+    eventArgument: (eventArg?: unknown) => void
   ): this {
     let emitter = this[resEvents];
 

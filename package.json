@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.1",
   "description": "Ultimate solution based on nanoexpress and best-practices",
-  "main": "cjs/nanoexpress.js",
+  "main": "esm/nanoexpress.js",
   "module": "esm/nanoexpress.js",
   "typings": "typings/nanoexpress.d.ts",
   "scripts": {
@@ -12,11 +12,11 @@
     "cleanup": "rm -rf cjs/*.js cjs/*.js.map esm/*.js esm/*.js.map typings/",
     "build": "npm run cleanup && rollup -c",
     "dev": "npm run cleanup && rollup -c -w",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prepublishOnly": "yarn build"
   },
   "engines": {
-    "node": ">=16.19.1"
+    "node": ">=18.19.1"
   },
   "repository": {
     "type": "git",
@@ -39,33 +39,34 @@
   "homepage": "https://github.com/nanoexpress/ultimate#readme",
   "dependencies": {
     "@nanoexpress/route-syntax-parser": "https://github.com/nanoexpress/route-syntax-parser/releases/download/v2.4.4/nanoexpress-route-syntax-parser-2.4.4.tgz",
-    "@types/debug": "^4.1.12",
-    "debug": "^4.3.4",
+    "debug": "^4.3.5",
     "fast-decode-uri-component": "^1.0.1",
-    "fast-query-parse": "^2.0.4",
-    "path-to-regexp": "^6.2.1",
+    "fast-query-parse": "^3.0.0",
+    "path-to-regexp": "^7.0.0",
     "supports-color": "^9.4.0",
     "uWebSockets.js": "https://github.com/uNetworking/uWebSockets.js/archive/v20.24.0.tar.gz"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.8.0",
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@semantic-release/git": "^10.0.1",
-    "@types/node": "^20.11.19",
+    "@commitlint/cli": "^19.3.0",
+    "@types/node": "^20.14.9",
+    "@types/debug": "^4.1.12",
     "baretest": "^2.x",
-    "commitlint-config-airlight": "^6.0.0",
-    "eslint": "^8.56.0",
-    "eslint-config-airlight-node": "^4.0.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.3.0",
-    "lint-staged-config-airlight": "^4.0.2",
-    "prettier": "^2.8.8",
-    "prettier-config-airlight": "^2.0.1",
-    "rollup": "^3.29.4",
+    "commitlint-config-airlight": "^6.0.4",
+    "eslint": "^9.5.0",
+    "eslint-config-airlight-node": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "lint-staged-config-airlight": "^4.1.1",
+    "prettier": "^3.3.2",
+    "prettier-config-airlight": "^6.0.2",
+    "rollup": "^4.18.0",
     "rollup-plugin-typescript2": "^0.36.0",
-    "smartlint": "^6.0.4",
-    "typedoc": "^0.25.8",
-    "typescript": "^5.0.4"
-  }
+    "smartlint": "^7.0.3",
+    "typedoc": "^0.26.2",
+    "typescript": "^5.5.2"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "dprint"
+  ]
 }

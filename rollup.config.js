@@ -18,13 +18,6 @@ export default ['nanoexpress'].map((name) => ({
       strict: true,
       sourcemap: true,
       exports: 'auto'
-    },
-    {
-      format: 'cjs',
-      file: `./cjs/${name}.cjs`,
-      strict: true,
-      sourcemap: true,
-      exports: 'auto'
     }
   ],
   plugins: [

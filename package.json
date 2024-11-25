@@ -64,7 +64,7 @@
     "prettier-config-airlight": "^2.0.1",
     "rollup": "^3.29.4",
     "rollup-plugin-typescript2": "^0.36.0",
-    "smartlint": "^6.0.4",
+    "smartlint": "^7.0.6",
     "typedoc": "^0.25.8",
     "typescript": "^5.0.4"
   }
